@@ -9,11 +9,11 @@ curl -X PUT -H "Content-Type:application/json" -d "{\"name\": \"Somebody\",  \"a
 curl -X DELETE http://localhost:8080/api/customers/1
 
 LINUX or MAC:
-curl -X POST -H "Content-Type:application/json" -d "{"name": "Somebody",  "age" : "20", "email" : "random@gmail.com"  }" http://localhost:8080/api/customers
-curl -X POST -H "Content-Type:application/json" -d "{"name": "Anybody",  "age" : "18", "email" : "random@hotmail.com"  }" http://localhost:8080/api/customers
+curl -X POST -H "Content-Type:application/json" -d '{"name": "Somebody",  "age" : "20", "email" : "random@gmail.com"  }' http://localhost:8080/api/customers
+curl -X POST -H "Content-Type:application/json" -d '{"name": "Anybody",  "age" : "18", "email" : "random@hotmail.com"  }' http://localhost:8080/api/customers
 
-curl -X POST -H "Content-Type:application/json" -d "{"name": "Anybody",  "age" : "18"}" http://localhost:8080/api/customers
+curl -X POST -H "Content-Type:application/json" -d '{"name": "Anybody",  "age" : "18"}' http://localhost:8080/api/customers
 
-curl -X PUT -H "Content-Type:application/json" -d "{"name": "Somebody",  "age" : "20", "email" : "randomNew@hotmail.com"  }" http://localhost:8080/api/customers/1
+curl -X PUT -H "Content-Type:application/json" -d '{"name": "Somebody",  "age" : "20", "email" : "randomNew@hotmail.com"  }' http://localhost:8080/api/customers/1
 
 curl -X DELETE http://localhost:8080/api/customers/1
