@@ -26,7 +26,7 @@ public class CustomerController {
 		return this.customerService.findAllCustomers();
 	}
 
-	record NewCustomerRequest(String name, String email, Integer age){}
+	public record NewCustomerRequest(String name, String email, Integer age){}
 
 	@PostMapping
 	public void addCustomer(@Valid @RequestBody NewCustomerRequest request){
